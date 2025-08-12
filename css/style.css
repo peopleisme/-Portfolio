@@ -34,8 +34,8 @@ body {
     right: 10px;
     width: 150px;
     height: 150px;
-    
-    background: url("../img/profile.jpg");
+    background-color: ;
+    background: url("../img/profile.png");
     background-size: cover;
 
 }
