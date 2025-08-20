@@ -28,6 +28,13 @@ body {
     color: whitesmoke;
 }
 
+.main, .aboutMe{
+    height: 100vh;
+}
+.aboutMe{
+    background-color: black;
+}
+
 .profile-picture {
     position: absolute;
     top: 10px;
@@ -40,13 +47,20 @@ body {
     border-radius: 100%;
 }
 
-.progress_nav {
+.navCenter {
+    height: 100%;
     position: fixed;
     right: 0;
     display: flex;
-    height: 100%;
-    flex-direction: row;
+    align-items: center;
+}
+
+.progress_nav {
     margin-right: 20px;
+    flex-direction: row;
+    display: flex;
+    position: relative;
+    height: min-content;
 }
 
 .progress_items {
@@ -54,6 +68,7 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    line-height: 3vh;
 }
 
 .progress_item {
@@ -62,16 +77,16 @@ body {
     position: relative;
 }
 
-.progress_item::after {
+.progress_item::before {
     content: "";
     position: absolute;
     background-color: grey;
     display: block;
-    width: 7px;
-    height: 7px;
+    width: 1vh;
+    height: 1vh;
     right: -15px;
-    top: calc(50%);
-    border-radius: 100%;
+    top: calc(1vh);
+    border-radius: 100px;
 }
 
 .progress_item.active {
@@ -79,9 +94,22 @@ body {
 }
 
 .progress_bar {
-    position: relative;
-    width: 3px;
+    display: block;
+    position: absolute;
     height: 100%;
-    background-color: aqua;
-    margin-left: 10px;
+    width: 2px;
+    right: -10px;
+    margin: 1.5vh 0 3vh calc(15px - 0.5vh - 1px);
+    top:0;
+    background-color: grey;
+}
+
+h1{
+    text-align: center;
+    font-size: 7vh;
+    font-weight: 100;
+}
+.aboutMe-paragrapgh{
+    text-align: center;
+    
 }
