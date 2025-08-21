@@ -11,14 +11,14 @@
     font-weight: 100;
 }
 
-#surName {
+#surName {  
     left: 18%;
-    top: 45%;
+    top: calc(30% + 7vw);
 }
 
 .names {
     position: absolute;
-    font-size: 15vh;
+    font-size: 8vw;
 }
 
 body {
@@ -61,6 +61,7 @@ body {
     display: flex;
     position: relative;
     height: min-content;
+    background-color: rgba(0, 0, 0, 0.75)
 }
 
 .progress_items {

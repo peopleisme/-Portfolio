@@ -8,7 +8,7 @@ window.addEventListener("scroll", () => {
 
     if (WscrollY > window.innerHeight * 0 && WscrollY < window.innerHeight * 0.3) {
         el_name.style.left = "calc(10% - " + 10 * WscrollY / (window.innerHeight * 0.3) + "%)";
-        el_name.style.fontSize = "calc(15vh - " + 12 * WscrollY / (window.innerHeight * 0.3) + "vh)";
+        el_name.style.fontSize = "calc(8vw - " + 6.5 * WscrollY / (window.innerHeight * 0.3) + "vw)";
         el_surName.style.top = "calc(45% - " + 60 * WscrollY / (window.innerHeight * 0.3) + "%)";
         console.log(WscrollY / (window.innerHeight * 0.3));
 
@@ -18,7 +18,7 @@ window.addEventListener("scroll", () => {
         el_name.style.position = "fixed";
         el_name.style.top = "0";
         el_name.style.left = "0";
-        el_name.style.fontSize = "3vh";
+        el_name.style.fontSize = "1.5vw";
 
     } else {
         el_name.style.position = "absolute";
